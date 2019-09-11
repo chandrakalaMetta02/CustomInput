@@ -7,13 +7,17 @@ import { CustomInputComponent } from './components/custom-input/custom-input.com
 import { RegistrationComponent } from './registration/registration.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputIconDirective } from './directive/input-icon.directive';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomInputComponent,
     RegistrationComponent,
-    InputIconDirective
+    InputIconDirective,
+    DashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

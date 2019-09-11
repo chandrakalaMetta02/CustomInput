@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
     templateUrl: 'registration.component.html',
     styleUrls:['registration.component.scss'],
-    selector:'registration'
+    selector:'app-registration'
 })
 export class RegistrationComponent implements OnInit {
     registerForm: FormGroup;
-    loading = false;
-    submitted = false;
+   @Output() submitedForm= new EventEmitter();
 
     constructor(
         private formBuilder: FormBuilder
@@ -31,13 +30,13 @@ export class RegistrationComponent implements OnInit {
     }
 
     onSubmit() {
-        this.submitted = true;
+       
 
         // stop here if form is invalid
         if (this.registerForm.invalid) {
             return;
         }
-
-       alert('registration');
+        console.log(this.registerForm.value);
+        this.submitedForm.emit();
     }
 }

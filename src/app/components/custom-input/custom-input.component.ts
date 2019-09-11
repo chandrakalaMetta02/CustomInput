@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CustomInputComponent implements OnInit {
 
-  @Input() type:string;
-  @Input() control:string;
-  @Input() icon:string;
-  @Input() fieldLabel:string;
+  @Input() type : string;
+  @Input() control : string;
+  @Input() icon : string;
+  @Input() fieldLabel : string;
 
   constructor() { }
 

@@ -1,6 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center;">
-  
-  <h2>Register</h2>
- <registration></registration>
+<app-dashboard *ngIf="!isResgistered">
+  <app-registration (submitedForm)="submitRegistration()"></app-registration>
+</app-dashboard>
 
+<app-dashboard *ngIf="isResgistered">
+  <app-login></app-login>
+</app-dashboard>

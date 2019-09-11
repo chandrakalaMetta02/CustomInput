@@ -1,0 +1,24 @@
+<h2>Register</h2>
+<form class="formCls" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+ 
+    
+    <app-custom-input  
+        [control]="loginForm.controls['username']"
+        fieldLabel="User Name"
+        icon="fa fa-user icon"
+        type="text"
+    ></app-custom-input>
+
+    <app-custom-input  
+        [control]="loginForm.controls['password']"
+        fieldLabel="Password"
+        icon="fa fa-key icon"
+        type="password"
+    ></app-custom-input>
+
+   
+  
+  <div class="form-group">
+      <button [disabled]="loginForm.invalid" class="butnCls btn btn-primary">Login</button>
+  </div>
+</form>
