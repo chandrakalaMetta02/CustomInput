@@ -1,0 +1,25 @@
+
+       
+
+        .butnCls:hover {
+            opacity: 1;
+          }
+          .butnCls:disabled{
+            opacity: 0.5;
+          }
+
+          /* Set a style for the submit button */
+.butnCls {
+    background-color: orange;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .formCls{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+  }

@@ -1,0 +1,49 @@
+.iconCls{
+    position: relative;
+    width: 60%;
+   .icon{
+      
+        right: 7px;
+        position: absolute;
+        top: 8px;
+    }
+    input{
+        padding: 5px;
+        padding-right: 20px;
+        width: 100%;
+    }
+}
+.form-group{
+    margin: 10px;
+}
+
+// * {box-sizing: border-box;}
+
+// /* Style the input container */
+// .input-container {
+//   display: flex;
+//   width: 100%;
+//   margin-bottom: 15px;
+// }
+
+// /* Style the form icons */
+// .icon {
+//   padding: 10px;
+//   background: orange;
+//   color: white;
+//   min-width: 50px;
+//   text-align: center;
+// }
+
+// /* Style the input fields */
+// .input-field {
+//   width: 100%;
+//   padding: 10px;
+//   outline: none;
+// }
+
+// .input-field:focus {
+//   border: 2px solid orange;
+// }
+
+
